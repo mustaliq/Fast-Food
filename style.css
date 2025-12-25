@@ -83,6 +83,15 @@ img {
     background: var(--secondary-color);
 }
 
+#menu-open-button {
+    margin-right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    display: none; 
+}
+
 /* navbar styling */
 header {
     position: fixed;
@@ -192,6 +201,10 @@ header .navbar {
 }
 
 /*about section style*/
+
+span {
+    color: var(--secondary-color);
+}
 
 .about-section {
     padding: 120px 0;
@@ -462,6 +475,8 @@ header .navbar {
 
 /* this is the responsive query media code for max width 1024px */
 @media screen  and (max-width: 1024px) {
+
+
     .menu-section .menu-list {
         gap: 60px;
     }
@@ -481,6 +496,9 @@ header .navbar {
 
 /* this is the responsive query media code for max width 900px */
 @media screen  and (max-width: 900px) {
+
+    
+
     :root {
     --font-size-m: 1rem;
     --font-size-l: 1.3rem;
@@ -607,6 +625,11 @@ header .navbar {
 /* this is the responsive query media code for max width 640px */
 @media screen and (max-width: 640px) {
 
+    #menu-open-button {
+        display: block; /* Shows the icon on smaller screens */
+    }
+
+
     .hero-image-wrapper {
         margin-top: 120px;
     }
@@ -631,6 +654,11 @@ header .navbar {
 
 /* this is the responsive query media code for max width 360px */
 @media screen and (max-width: 360px) {
+
+    #menu-open-button {
+        display: block; /* Shows the icon on smaller screens */
+    }
+
     .hero-image-wrapper {
         margin-top: 120px;
     }
